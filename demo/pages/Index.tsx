@@ -2,20 +2,19 @@ import {
   CheckCircle,
   CirclePlus,
   Code,
-  FileJson,
-  GitBranch,
-  User,
-  Package,
+  // FileJson,
+  // GitBranch,
+  // User,
+  // Package,
   RefreshCw,
 } from "lucide-react";
-import React, { useState } from "react";
+// import React, { useState } from "react";
+import { useState } from "react";
 import { exampleSchema } from "../../demo/utils/schemaExample.ts";
-import JsonSchemaEditor from "../../src/components/SchemaEditor/JsonSchemaEditor.tsx";
 import { JsonValidator } from "../../src/components/features/JsonValidator.tsx";
 import { SchemaInferencer } from "../../src/components/features/SchemaInferencer.tsx";
+import JsonSchemaEditor from "../../src/components/SchemaEditor/JsonSchemaEditor.tsx";
 import { Button } from "../../src/components/ui/button.tsx";
-import type { JSONSchema } from "../../src/types/jsonSchema.ts";
-import { en } from "../../src/i18n/locales/en.ts";
 import {
   Select,
   SelectContent,
@@ -23,7 +22,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "../../src/components/ui/select.tsx";
+import { en } from "../../src/i18n/locales/en.ts";
 import { TranslationContext } from "../../src/i18n/translation-context.ts";
+import type { JSONSchema } from "../../src/types/jsonSchema.ts";
 
 const Index = () => {
   const [schema, setSchema] = useState<JSONSchema>(exampleSchema);
@@ -73,7 +74,7 @@ const Index = () => {
         <div className="container mx-auto px-0 sm:px-2 md:px-6 lg:px-8 pt-16 pb-24 relative z-10">
           <div className="max-w-4xl mx-auto">
             {/* Header */}
-            <div className="text-center mb-12">
+            {/* <div className="text-center mb-12">
               <div className="bg-primary/10 text-primary inline-flex items-center px-3 py-1 rounded-full text-sm font-medium mb-4">
                 <FileJson size={16} className="mr-1.5" />
                 Easy Schema Builder
@@ -86,7 +87,7 @@ const Index = () => {
                 Design your data structure effortlessly without writing a single
                 line of code. Perfect for APIs, forms, and data validation.
               </p>
-            </div>
+            </div> */}
 
             {/* Action Buttons */}
             <div className="flex flex-wrap justify-center gap-4 mb-8 animate-in">
@@ -158,7 +159,7 @@ const Index = () => {
 
           {/* How It Works - kept within max-w-4xl */}
           <div className="max-w-4xl mx-auto">
-            <div className="mt-16 grid md:grid-cols-3 gap-6 text-center animate-in">
+            {/* <div className="mt-16 grid md:grid-cols-3 gap-6 text-center animate-in">
               <div className="glass-panel p-6">
                 <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mx-auto mb-4">
                   <span className="text-primary font-bold text-xl">1</span>
@@ -198,10 +199,10 @@ const Index = () => {
                   libraries like Ajv.
                 </p>
               </div>
-            </div>
+            </div> */}
 
             {/* Use Case Examples */}
-            <div className="mt-10 grid md:grid-cols-2 gap-6 animate-in">
+            {/* <div className="mt-10 grid md:grid-cols-2 gap-6 animate-in">
               <div className="glass-panel p-6">
                 <h3 className="text-lg font-medium mb-2">API Development</h3>
                 <p className="text-muted-foreground text-sm mb-3">
@@ -245,18 +246,18 @@ const Index = () => {
                   )}
                 </div>
               </div>
-            </div>
+            </div> */}
 
             {/* Footer */}
-            <div className="mt-16 text-center text-sm text-muted-foreground">
+            {/* <div className="mt-16 text-center text-sm text-muted-foreground">
               <p>
                 Built with simplicity in mind. Design beautiful data structures
                 without technical knowledge.
               </p>
-            </div>
+            </div> */}
 
             {/* Tools Section */}
-            <div className="mt-12 animate-in">
+            {/* <div className="mt-12 animate-in">
               <h2 className="text-2xl font-bold text-center mb-6">
                 Ecosystem & Tools
               </h2>
@@ -390,10 +391,10 @@ const Index = () => {
                   Explore more JSON Schema tools →
                 </a>
               </div>
-            </div>
+            </div> */}
 
             {/* Author Footer */}
-            <div className="mt-16 py-4 border-t border-border/30 backdrop-blur-xs">
+            {/* <div className="mt-16 py-4 border-t border-border/30 backdrop-blur-xs">
               <div className="flex items-center justify-center gap-2 text-sm">
                 <span className="text-muted-foreground">Built by</span>
                 {[
@@ -431,7 +432,7 @@ const Index = () => {
                   </React.Fragment>
                 ))}
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
